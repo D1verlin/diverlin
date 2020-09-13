@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<title>Diverlin</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onload="Writer()">
+
+
+	<div class="container">
+	<h1>Diverlin</h1>
+	<div class="description"><span>-</span> <span id="description"></span> <span>-</span></div>
+	<div class="block_s">
+				<a href="https://vk.com/d1verlin"><div class="element_s">
+			<span class="iconify" id="size" data-inline="false" data-icon="fa-brands:vk" style=""></span>
+		</div></a>
+				<a href="https://steamcommunity.com/id/D1verlin/"><div class="element_s">
+			<span class="iconify" id="size" data-inline="false" data-icon="fa-brands:steam" style=""></span>
+		</div></a>
+				<a href="https://t.me/D1verlin"><div class="element_s">
+			<span class="iconify" id="size" data-inline="false" data-icon="fa-brands:telegram" style=""></span>
+		</div></a>
+				<a href="mailto:dodobrest006@gmail.com"><div class="element_s">
+			<span class="iconify" id="size" data-inline="false" data-icon="ant-design:mail-filled" style=""></span>
+		</div></a>
+	</div>
+	<div class="block_m">
+		<a href="#"><div class="element_m" style="border-color: #AF48FF; cursor: no-drop;"><span style="color: #AF48FF">Style-1</span></div></a>
+		<a href="#"><div class="element_m"><span>Style-2</span></div></a>
+		<a href="#"><div class="element_m"><span>RW</span></div></a>
+	</div>
+
+
+	</div>
+<script type="text/javascript">
+	let i = 0;
+	let text = 'Ещё один Noname';
+	let speed = 100;
+	function Writer() {
+		if (i < text.length) {
+			document.getElementById('description').innerHTML += text.charAt(i);
+			i++;
+			setTimeout(Writer, speed);
+		}
+	}
+</script>
+</body>
+</html>

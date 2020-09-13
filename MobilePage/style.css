@@ -1,0 +1,84 @@
+@font-face {
+    font-family: SF UI Display;
+    src:url(SanFrancisco/SFUIDisplay-Black.ttf);
+    src:url(SanFrancisco/SFUIDisplay-Bold.ttf);
+    src:url(SanFrancisco/SFUIDisplay-Light.ttf);
+    src:url(SanFrancisco/SFUIDisplay-Medium.ttf);
+    src:url(SanFrancisco/SFUIDisplay-Regular.ttf);
+    src:url(SanFrancisco/SFUIDisplay-Heavy.ttf);
+    src:url(SanFrancisco/SFUIDisplay-Semibold.ttf);
+}
+
+@font-face {
+    font-family: SF UI Black;
+    src:url(SanFrancisco/SFUIDisplay-Black.ttf);
+}
+
+@font-face {
+    font-family: SF UI Light;
+    src:url(SanFrancisco/SFUIDisplay-Light.ttf);
+}
+
+body,html {
+	margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url(gif/8.gif) no-repeat center / cover;
+}
+
+.profile {
+	padding: 55px;
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+	width: 130px;
+	height: 130px;
+	border-radius: 3000px;
+}
+
+#p {
+    background: #fff;
+    width: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 120px;
+
+}
+
+#name {
+	color: #fff;
+    font-family: SF UI Black;
+    font-size: 120px;
+}
+
+a {
+	text-decoration: none;
+    color: #fff;
+    font-family: SF UI Black;
+    font-size: 140px;
+}
+
+li {
+	color: #ffffff;
+    list-style-type: square;
+    font-size: 140px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.main {
+	transform: translate(-50%, -50%);
+    margin-right: -50%;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
