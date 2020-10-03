@@ -1,29 +1,11 @@
-@font-face {
-    font-family: SF UI Display;
-    src:url(SanFrancisco/SFUIDisplay-Black.ttf);
-    src:url(SanFrancisco/SFUIDisplay-Bold.ttf);
-    src:url(SanFrancisco/SFUIDisplay-Light.ttf);
-    src:url(SanFrancisco/SFUIDisplay-Medium.ttf);
-    src:url(SanFrancisco/SFUIDisplay-Regular.ttf);
-    src:url(SanFrancisco/SFUIDisplay-Heavy.ttf);
-    src:url(SanFrancisco/SFUIDisplay-Semibold.ttf);
-}
 
-@font-face {
-    font-family: SF UI Black;
-    src:url(SanFrancisco/SFUIDisplay-Black.ttf);
-}
-
-@font-face {
-    font-family: SF UI Light;
-    src:url(SanFrancisco/SFUIDisplay-Light.ttf);
-}
 
 body,html {
 	margin: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
+    font-weight: bold;
 }
 
 body {
@@ -54,14 +36,14 @@ img {
 
 #name {
 	color: #fff;
-    font-family: SF UI Black;
+    font-family: 'Google sans';
     font-size: 120px;
 }
 
 a {
 	text-decoration: none;
     color: #fff;
-    font-family: SF UI Black;
+    font-family: 'Google sans';
     font-size: 140px;
 }
 
