@@ -1,5 +1,7 @@
 :root {
-	--color-background: #000;
+	--primary-bg: #000;
+	--secondry-bg:#fff;
+	--link-hover:#8960FF;
 }
 
 
@@ -9,12 +11,12 @@
 }
 
 body {
-	background-color: var(--color-background);
+	background-color: var(--primary-bg);
 	display: inline-flex;
 }
 
 .container-min {
-	background-color: #fff;
+	background-color: var(--secondry-bg);
 	margin-right: 18px;
 }
 
@@ -50,15 +52,15 @@ body {
 	margin-right: 10px;
 	margin-left: 10px;
 	border: 3px solid rgba(0, 0, 0, 1);
+	transition: 0.5s;
 }
 
-#l_1 { transition: 0.5s; }
+.links:hover {
+	background-color: var(--link-hover);
+	border: 3px solid var(--link-hover);
+}
 
-#l_2 { transition: 0.5s; }
 
-#l_1:hover { background-color: #8960FF; border: 3px solid #0000; }
-
-#l_2:hover { background: rgba(137, 96, 255, 1); border: 3px solid #0000; }
 
 #c_1 {
 	width: max-content;
@@ -77,10 +79,17 @@ body {
 	padding-top: 30px;
 }
 
+#active {
+	background: var(--link-hover);
+	border: 3px solid #0000;
+	cursor: no-drop;
+	color: #000;
+}
+
 h1 {
 	font-weight: bold;
 	font-size: 96px;
-	color: var(--color-background);
+	color: var(--primary-bg);
 	cursor: default;
 }
 
