@@ -1,4 +1,6 @@
-
+:root {
+    --primary-text:#fff;
+}
 
 body,html {
 	margin: 0;
@@ -9,7 +11,7 @@ body,html {
 }
 
 body {
-    background: url(gif/8.gif) no-repeat center / cover;
+    background:url(bg.svg) top / cover;
 }
 
 .profile {
@@ -19,6 +21,12 @@ body {
     align-items: center;
 }
 
+ul {
+
+    margin-top: 35%;
+    padding-right: 50px;
+}
+
 img {
 	width: 130px;
 	height: 130px;
@@ -26,7 +34,7 @@ img {
 }
 
 #p {
-    background: #fff;
+    background: var(--primary-text);
     width: 10px;
     margin-left: 25px;
     margin-right: 25px;
@@ -35,24 +43,25 @@ img {
 }
 
 #name {
-	color: #fff;
+	color: var(--primary-text);
     font-family: 'Google sans';
     font-size: 120px;
 }
 
 a {
 	text-decoration: none;
-    color: #fff;
+    color: var(--primary-text);
     font-family: 'Google sans';
     font-size: 140px;
 }
 
 li {
-	color: #ffffff;
-    list-style-type: square;
+	color: var(--primary-text);
+    list-style-type: none;
     font-size: 140px;
-    text-align: left;
-    margin-left: 80px;
+    text-align: end;
+    margin-bottom: 15px;
+    
 }
 
 .main {
@@ -63,4 +72,8 @@ li {
     width: auto;
     height: auto;
     position: absolute;
+}
+
+#close {
+    margin-right: -850px;
 }
