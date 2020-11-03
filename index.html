@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Choice</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Select</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="Select/flickity.css" media="screen">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
-
 <script type="text/javascript">
 if (screen.width <= 480) {
 window.location = "MobilePage/";
 }
 </script>
 <body>
-  <div class="container">
-<a href="Style-1/"><h1 class="text" id="one">Style-1</h1></a>
-<a href="Style-2/"><h1 class="text" id="two">Style-2</h1></a>
-<a href="RW/ru/"><h1 class="text" id="three">RW</h1></a>
-<a href="MobilePage/"><h1 class="text" id="four">MP</h1></a>
+<h1 id="text">Select</h1>
+<div class="main-carousel" data-flickity='{ "contain": true, "prevNextButtons": false,
+"pageDots": false, "draggable": false   }'> <!--  change "draggable" to TRUE if there are more than 3 projects	-->
+  <div class="carousel-cell" id="b1"><a id="a1" href="RW/en/">R | W</a><img id="i1" src="Select/img/Present1.jpg"></div>
+  <div class="carousel-cell" id="b2"><a id="a2" href="Style-1/">Style-1</a><img id="i2" src="Select/img/Present2.png"></div>
+  <div class="carousel-cell" id="b3"><a id="a3" href="Style-2/">Style-2</a><img id="i3" src="Select/img/Present3.png"></div>
 </div>
+<script src="Select/flickity.pkgd.min.js"></script>
+<script src="Select/hover.js"></script>
 </body>
 </html>
