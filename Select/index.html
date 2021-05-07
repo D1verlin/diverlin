@@ -3,20 +3,61 @@
 <head>
 	<title>Select</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="flickity.css" media="screen">
-	<link rel="shortcut icon" href="favicon.ico" type="../image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../Fonts/font.css">
+	<link rel="shortcut icon" href="../Icons/Select.ico" type="image/x-icon">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<!-- <link rel="stylesheet" type="text/css" href="../snow/snow.css"> -->
 </head>
 <body>
-<h1 id="text">Select</h1>
-<div class="main-carousel" data-flickity='{ "contain": true, "prevNextButtons": false,
-"pageDots": false, "draggable": false   }'> <!--  change "draggable" to TRUE if there are more than 3 projects	-->
-  <div class="carousel-cell" id="b1"><a id="a1" href="../RW/en/">R | W</a><img id="i1" src="img/Present1.jpg"></div>
-  <div class="carousel-cell" id="b2"><a id="a2" href="../Style-1/">Style-1</a><img id="i2" src="img/Present2.png"></div>
-  <div class="carousel-cell" id="b3"><a id="a3" href="../Style-2/">Style-2</a><img id="i3" src="img/Present3.png"></div>
+	<div class="preloader">
+  <div class="preloader__row">
+  </div>
 </div>
-<script src="flickity.pkgd.min.js"></script>
-<script src="hover.js"></script>
+<header id="h_first"><span id="icon-spin" style="width: 48px; height: 48px;" class="iconify" data-icon="twemoji:waving-hand" data-inline="false"></span>
+<h1>Welcome to Hub</h1></header>
+<main>
+	<div class="box">
+		<header><h1>My Css Styles</h1><nav><a href="https://d1verlin.github.io/My-Css-Styles/"><span style="width: 32px;height: 32px;" class="iconify" data-icon="ic:outline-launch" data-inline="false"></span></a></nav></header>
+		<div class="list">
+			<p id="l_info">Сборник кастомных css стилей
+для плагина Stylish</p>
+		</div>
+	</div>
+<!-- /// -->
+<!--
+<div class="box">
+		<header><h1>BandThemes</h1><nav><a href=""><span style="width: 32px;height: 32px;" class="iconify" data-icon="ic:outline-launch" data-inline="false"></span></a></nav></header>
+		<div class="list">
+			<p id="l_info">Кастомные иконки для Mi band 5/6</p>
+		</div>
+	</div>
+-->
+	<!-- /// -->
+<div class="box">
+		<header><h1>R | W</h1><nav><a href="../RW/ru/"><span style="width: 32px;height: 32px;" class="iconify" data-icon="ic:outline-launch" data-inline="false"></span></a></nav></header>
+		<div class="list">
+		<p id="l_info">Помощь в установке и
+настройке windows</p>
+		<p id="l_warning">Устарел</p>
+		</div>
+	</div>
+	<!-- /// -->
+<div class="box">
+		<header><h1>Styles</h1><nav><a href="../Styles/"><span style="width: 32px;height: 32px;" class="iconify" data-icon="ic:outline-launch" data-inline="false"></span></a></nav></header>
+		<div class="list">
+			<p id="l_info">Различные варианты сайтов-визиток</p>
+		</div>
+	</div>
+</main>
+<footer>Copyright &#169; 2020-2021 - <a href="https://diverlin.tk/">Diverlin</a> - All right reserved</footer>
+<script type="text/javascript">
+	    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+</script>
 </body>
 </html>
