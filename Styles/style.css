@@ -47,7 +47,7 @@ h1 {
 	margin-top: 15px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: var(--list-text-color);
     background: var(--list-block-color);
@@ -72,7 +72,7 @@ a {
 
 }
 
-a:hover {
+nav a:hover {
 	background: var(--list-block-color-hover);
 }
 
