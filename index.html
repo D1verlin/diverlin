@@ -3,19 +3,16 @@
 <head>
 	<title>Select</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="Select/flickity.css" media="screen">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../Fonts/font.css">
 </head>
-<script type="text/javascript">
-if (screen.width <= 480) {
-window.location = "MobilePage/";
-} else {
-	window.location = "Select/index.html";
-}
-</script>
-<body>
+<body onload="Select()">
 <h1 id="text">Select<a href="Select/index.html">Select</a></h1>
 
 </body>
+<script type="text/javascript">
+	function Select() {
+		window.location = "Select/index.html";
+	}
+</script>
 </html>
