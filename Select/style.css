@@ -82,7 +82,6 @@ main {
   background: rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  height: 200px;
   width: fit-content;
   transition: 0.3s;
 }
@@ -193,28 +192,37 @@ nav:hover {
   border: 2px solid rgb(255 255 255 / 30%);
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 80%;
-  line-height: 23px;
-  color: #646464;
-  text-align: center;
-  cursor: default;
+
+
+@media screen and (max-width: 480px) {
+  #h_first h1 {
+    font-size: 30px;
+}
+  body {
+    padding: 15px;
+  }
+  .list p {
+    width: 300px;
+}
+  #icon-spin {
+    width: 40px !important;
+    height: 40px !important;
+}
+  header {
+    justify-content: center;
+}
+  main {
+    justify-content: center;
+  }
+
 }
 
-footer a {
-  color: #646464;
-  transition: 0.3s;
-  text-decoration: underline;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+    header {
+    justify-content: center;
 }
-
-footer a:hover {
-  color: #fff;
+  main {
+    justify-content: center;
+  }
+  
 }
