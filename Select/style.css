@@ -109,15 +109,22 @@ a {
 
 a:hover {
   opacity: 100%;
+   
 }
 
-nav {
+.box-header-nav {
   transition: 0.3s;
 }
 
-nav:hover {
-  transform: scale(1.2);
+.box-header-nav:hover {
+ transform: scale(1.2);
 }
+
+nav {
+      gap: 15px;
+    display: flex;
+}
+
 
 .list {
   font-family: Google Sans;
@@ -209,10 +216,10 @@ nav:hover {
     height: 40px !important;
 }
   header {
-    justify-content: center;
+    
 }
   main {
-    justify-content: center;
+    
   }
 
 }
@@ -223,6 +230,9 @@ nav:hover {
 }
   main {
     justify-content: center;
+  }
+  nav {
+    gap: 5px;
   }
   
 }
