@@ -10,18 +10,102 @@
 
   gtag('config', 'G-Q5P5L2GNEE');
 </script>
-	<title>Select</title>
+	<title>Diverlin</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="../Fonts/font.css">
+	<link rel="shortcut icon" href="Icons/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Fonts/Geometria/GeometriaFont.css">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body onload="Select()">
-<h1 id="text">Select<a href="Select/index.html">Select</a></h1>
+<body>
+		<div class="preloader">
+  <div class="preloader__row">
+  </div>
+</div>
+	<input type="text" value="Diverlin#9908" id="myInput">
+	<span class="iconify" id="notification" data-icon="heroicons-outline:clipboard-copy" data-inline="false"></span>
+<header>
+	<span id="icon-spin" class="iconify" data-icon="twemoji:waving-hand" data-inline="false"></span>
+	<h1>Diverlin</h1>
+</header>
+<div class="container">
+	<div class="min-container" id="Comms">
+		<header><h2>Communication</h2></header>
+		<div class="groups">
+			<a href="https://vk.com/diverlin"><span class="iconify" data-icon="cib:vk" data-inline="false"></span></a>
+			<a href="mailto:dodobrest006@gmail.com"><span class="iconify" data-icon="dashicons:email" data-inline="false"></span></a>
+			<a href="https://t.me/D1verlin"><span class="iconify" data-icon="akar-icons:telegram-fill" data-inline="false"></span>
+			</a>
+			<a onclick="CopyText()"><span class="iconify" data-icon="simple-icons:discord" data-inline="false"></span></a>
+		</div>
+	</div>
+	<div class="min-container" id="Projects">
+		<header><h2>Projects</h2></header>
+		<div class="project-list">
+			<div class="box">
+		<header><h3>My Css Styles</h3><nav>
+			<a href="https://github.com/D1verlin/My-Css-Styles"><span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span></a>
+			<a class="box-header-nav" href="https://d1verlin.github.io/My-Css-Styles/">
+			<span class="iconify" data-icon="ic:outline-launch" data-inline="false"></span></a></nav></header>
+		<div class="list">
+			<p id="l_info">Collection of custom css styles
+for the Stylish plugin</p>
+		</div>
+	</div>
+<div class="box">
+		<header><h3>R | W</h3><nav><a class="box-header-nav" href="RW/"><span class="iconify" data-icon="ic:outline-launch" data-inline="false"></span></a></nav></header>
+		<div class="list">
+		<p id="l_info">Installation assistance and
+configuring windows</p>
+		<p id="l_warning">Deprecated</p>
+		</div>
+	</div>
+	<!-- /// -->
+<div class="box">
+		<header><h3>Styles</h3><nav><a class="box-header-nav" href="Styles/"><span class="iconify" data-icon="ic:outline-launch" data-inline="false"></span></a></nav></header>
+		<div class="list">
+			<p id="l_info">Various options for business card sites</p>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+<script>
+	/* Discord Link */
+	function CopyText() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
 
-</body>
-<script type="text/javascript">
-	function Select() {
-		window.location = "Select/index.html";
-	}
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy text in text field */
+  document.execCommand("copy");
+  CopiedNotify();
+}
+function CopiedNotify() {
+	let notifyblock = document.getElementById("notification");
+	notifyblock.style.opacity = '100%';
+	var TimetoClose;
+	TimetoClose = window.setTimeout(CloseNotify, 1500); /* 1.5s to start CloseNotify() */
+}
+function CloseNotify() {
+	let notifyblock = document.getElementById("notification");
+	notifyblock.style.opacity = '0%';
+}
 </script>
+
+<script>
+	/*	Preloader	*/
+	    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+</script>
+</body>
 </html>
