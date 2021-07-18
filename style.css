@@ -5,7 +5,8 @@
     --color-text: #FFF;
     --color-h2: #eaeaea;
     --color-icon: #FFF;
-    --border: 2px solid rgba(255, 255, 255, 0.2);
+    --border: 2px solid #474B51;
+    --border-hover: 2px solid #8398bb;
     --project-list-warning-color: #714646;
     --project-list-description-color: #364256;
 }
@@ -76,6 +77,11 @@ body {
     font-family: 'Geometria',sans-serif;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -86,6 +92,9 @@ header {
 header svg {
     width: 40px;
     height: 40px;
+}
+
+#box-header {
     padding: 10px;
     background: var(--block-color);
     border: var(--border);
@@ -132,7 +141,7 @@ header h2 {
 }
 
 .groups a {
-    padding: 25px;
+    padding: 20px;
     background: var(--block-color);
     border: var(--border);
     border-radius: 10px;
@@ -140,6 +149,7 @@ header h2 {
 
 .groups a:hover {
     background: var(--block-color-hover);
+    border: var(--border-hover);
 }
 
 .groups a svg {
@@ -180,7 +190,6 @@ header h2 {
 }
 
 .box h3 {
-  font-family: Google Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -199,6 +208,8 @@ a {
 
 nav a svg:hover {
     background: var(--block-color-hover);
+    border: var(--border-hover);
+    border-width: 1px;
 }
 
 nav {
@@ -210,11 +221,15 @@ nav a svg {
     width: 32px;
     height: 32px;
     transition: 0.3s;
+    padding: 10px;
+    background: var(--block-color);
+    border: var(--border);
+    border-width: 1px;
+    border-radius: 10px;
 }
 
 
 .list {
-  font-family: Google Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -293,14 +308,17 @@ nav a svg {
       body {
     padding: 15px;
   }
-      .list p {
-        width: 300px;
-    }
+
       main {
         justify-content: center;
     }
 
      .groups a {
         padding: 20px;
+    }
+
+    .project-list {
+        justify-content: center;
+        align-items: stretch;
     }
 }
