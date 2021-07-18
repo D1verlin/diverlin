@@ -313,8 +313,21 @@ nav a svg {
         justify-content: center;
     }
 
+    .groups {
+        gap: 10px;
+    }
+
+    .groups a svg {
+        width: 48px;
+        height: 48px;
+    }
+
      .groups a {
-        padding: 20px;
+        padding: 13px;
+    }
+
+    .list p {
+        width: auto;
     }
 
     .project-list {
