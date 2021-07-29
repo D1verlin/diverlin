@@ -9,6 +9,8 @@
     --border-hover: 2px solid #8398bb;
     --project-list-warning-color: #714646;
     --project-list-description-color: #364256;
+    --copy-color: #5aa772;
+    --border-copy: 2px solid #5aa772;
 }
 
     /* width */
@@ -281,28 +283,23 @@ nav a svg {
 
 }
 
-#notification {
-    font-size: 18px;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    background: #799e802e;
-    border: var(--border);
-    border-radius: 10px;
-    gap: 10px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    align-items: center;
-    cursor: default;
-    transition: 0.3s;
-    opacity: 0%;
-}
+
 
 #myInput {
   position: absolute;
   top: -999999px;
 }
+
+#boxcopy {
+    width: 90px;
+    height: 94px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 @media screen and (max-width: 768px) {
       body {
@@ -334,4 +331,13 @@ nav a svg {
         justify-content: center;
         align-items: stretch;
     }
+
+    #boxcopy {
+    width: 74px;
+    height: 78px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }

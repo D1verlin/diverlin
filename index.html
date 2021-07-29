@@ -25,7 +25,6 @@
   </div>
 </div>
 	<input type="text" value="Diverlin#9908" id="myInput">
-	<span class="iconify" id="notification" data-icon="heroicons-outline:clipboard-copy" data-inline="false"></span>
 <header>
 	<span id="box-header"><span id="icon-spin" class="iconify" data-icon="twemoji:waving-hand" data-inline="false"></span></span>
 	<h1>Diverlin</h1>
@@ -38,7 +37,7 @@
 			<a href="mailto:dodobrest006@gmail.com"><span class="iconify" data-icon="dashicons:email" data-inline="false"></span></a>
 			<a href="https://t.me/D1verlin"><span class="iconify" data-icon="akar-icons:telegram-fill" data-inline="false"></span>
 			</a>
-			<a onclick="CopyText()"><span class="iconify" data-icon="simple-icons:discord" data-inline="false"></span></a>
+			<a id="boxcopy" onclick="CopyText()"><span id="copylink" class="iconify" data-icon="simple-icons:discord" data-inline="false"></span></a>
 		</div>
 	</div>
 	<div class="min-container" id="Projects">
@@ -80,21 +79,42 @@ configuring windows</p>
 
   /* Select the text field */
   copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  copyText.setSelectionRange(0, 99999); // For mobile devices 
 
   /* Copy text in text field */
   document.execCommand("copy");
   CopiedNotify();
 }
 function CopiedNotify() {
-	let notifyblock = document.getElementById("notification");
-	notifyblock.style.opacity = '100%';
+
+	document.getElementById("copylink").remove();
+	let boxcopy = document.getElementById("boxcopy");
+	let spanlink = document.createElement('span');
+
+	spanlink.className = "iconify animate__animated animate__fadeIn";
+	spanlink.setAttribute("id","copylink")
+	spanlink.setAttribute("data-icon","akar-icons:link-chain");
+	spanlink.setAttribute("data-inline","false");
+
+	boxcopy.prepend(spanlink);
+	boxcopy.style.background = "var(--copy-color)";
+	boxcopy.style.border = "var(--border-copy";
+
 	var TimetoClose;
-	TimetoClose = window.setTimeout(CloseNotify, 1500); /* 1.5s to start CloseNotify() */
+	TimetoClose = window.setTimeout(CloseNotify, 1000); // 1.5s to start CloseNotify() 
 }
 function CloseNotify() {
-	let notifyblock = document.getElementById("notification");
-	notifyblock.style.opacity = '0%';
+	document.getElementById("copylink").remove();
+	let boxcopy = document.getElementById("boxcopy");
+	let spanlink = document.createElement('span');
+	spanlink.className = "iconify animate__animated animate__fadeIn";
+	spanlink.setAttribute("id","copylink")
+	spanlink.setAttribute("data-icon","simple-icons:discord");
+	spanlink.setAttribute("data-inline","false");
+
+	boxcopy.prepend(spanlink);
+	boxcopy.style.background = "";
+	boxcopy.style.border = "";
 }
 </script>
 
