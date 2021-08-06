@@ -402,6 +402,10 @@ nav a svg {
         justify-content: center;
     }
 
+    header h1 {
+        font-size: 36px;
+    }
+
     .groups {
         gap: 10px;
     }
