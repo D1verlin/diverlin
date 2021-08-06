@@ -2,6 +2,7 @@
     --bg: #1E242E;
     --block-color: #191E26;
     --block-color-hover: #8398bb;
+    --block-setting-hover: #222933;
     --color-text: #FFF;
     --color-h2: #eaeaea;
     --color-icon: #FFF;
@@ -88,13 +89,102 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 15px;
+    justify-content: space-between;
 }
 
-header svg {
+.profile {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile svg {
     width: 40px;
     height: 40px;
 }
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+#btn-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--block-color);
+    border: var(--border);
+    padding: 20px 16px 20px 16px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    gap: 15px;
+}
+
+#btn-dropdown h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: var(--color-h2);
+}
+
+#btn-dropdown svg {
+    width: 22px;
+    height: 22px;
+}
+
+#btn-dropdown:hover {
+    background: var(--block-color-hover);
+    border: var(--border-hover);
+    
+}
+
+
+
+.lang-content {
+    display: none;
+    position: absolute;
+    background: var(--block-color);
+    border: var(--border);
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 15px;
+}
+
+.lang {
+
+}
+
+.lang-content #active {
+    color: #6780ab;
+    cursor: not-allowed;
+}
+
+.lang-content a {
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: var(--color-h2);
+    transition: 0.3s;
+
+}
+
+
+.lang svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-h2);
+}
+
+.show {display:flex;}
+
 
 #box-header {
     padding: 10px;
@@ -103,6 +193,8 @@ header svg {
     border-width: 1px;
     border-radius: 10px;
 }
+
+
 
 header h1 {
     font-weight: bold;
