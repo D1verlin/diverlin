@@ -720,4 +720,33 @@ p {
     line-height: normal;
     letter-spacing: 0;
   }
+  p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header h2 {
+    font-size: 18px;
+  }
+  .filter-checkbox + label::before {
+    width: 18px;
+    height: 18px;
+  }
+  .c-p {
+    position: initial;
+    right: 0;
+    bottom: 0;
+  }
+  .Libraries {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .Final {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
+/*# sourceMappingURL=chapter.css.map */
