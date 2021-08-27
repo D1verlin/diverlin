@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5P5L2GNEE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q5P5L2GNEE');
+</script>
+	<meta charset="utf-8">
+	<title>WSA</title>
+	<link rel="stylesheet" type="text/css" href="../Fonts/Geometria/GeometriaFont.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div id="top" class="block">
+		<h1 id="name">Windows Setup Assistant</h1>
+		<p>Помощь в установке и настройке windows</p>
+	</div>
+	<nav class="bottom">
+	<div id="b1" class="block chapters">
+		<header>
+			<h2>Глава Первая:</h2>
+			<h1>Оптимизация</h1>
+		</header>
+		<p>Руководство и программное обеспечение для оптимизации windows</p>
+	</div>
+	<div id="b2" class="block chapters">
+		<header>
+			<h2>Глава Вторая:</h2>
+			<h1>ПО</h1>
+		</header>
+		<p>Коллекция программного обеспечения с фильтрами по категориям</p>
+	</div>
+	<div id="b3" class="block chapters">
+		<header>
+			<h2>Глава Третья:</h2>
+			<h1>Библиотеки</h1>
+		</header>
+		<p>Коллекция нужных мне библиотек</p>
+	</div>
+
+		<div id="b4" class="block chapters">
+		<header>
+			<h2>Финал:</h2>
+			<h1>Бонус</h1>
+		</header>
+		<p>Кастомизация Windows</p>
+	</div>
+	</nav>
+</div>
+<a href="Chapter/One.html" class="button">Старт</a>
+	<script type="text/javascript">
+		if (window.matchMedia("(min-width: 768px)").matches) {
+  document.getElementById('name').innerHTML = "Windows Setup Assistant";
+} else {
+  document.getElementById('name').innerHTML = "WSA";
+}
+	</script>
+<script>
+	let clock = 2000; // 1000 = 1s
+	window.onload = function () {
+	window.setTimeout(BOne, 0500); // clock to start anim
+    }
+    function BOne() { // start anim & block one
+    	document.getElementById('b1').classList.add('BottomActive');
+    	window.setTimeout(BTwo, clock); 
+    }
+    function BTwo() { // block two
+    	document.getElementById('b1').classList.remove('BottomActive');
+    	document.getElementById('b2').classList.add('BottomActive');
+    	window.setTimeout(BThree, clock); 
+    }
+    function BThree() { // block three
+    	document.getElementById('b2').classList.remove('BottomActive');
+    	document.getElementById('b3').classList.add('BottomActive');
+    	window.setTimeout(BFour, clock); 
+    }
+    function BFour() { // block three
+    	document.getElementById('b3').classList.remove('BottomActive');
+    	document.getElementById('b4').classList.add('BottomActive');
+    	window.setTimeout(Bor, clock); 
+    }
+    function Bor() { // block one
+    	document.getElementById('b4').classList.remove('BottomActive');
+    	document.getElementById('b1').classList.add('BottomActive');
+    	window.setTimeout(BTwo, clock);      	
+    }
+</script>
+</body>
+</html>

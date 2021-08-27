@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Библиотеки</title>
+	<link rel="stylesheet" type="text/css" href="../../Fonts/Geometria/GeometriaFont.css">
+	<link rel="stylesheet" type="text/css" href="chapter.css">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header class="progressbar">
+	<div class="stage s-active s-one-check animate__animated animate__slideInLeft"><h1>Оптимизация</h1></div>
+	<div class="stage s-active s-two-check animate__animated animate__slideInLeft"><h1>ПО</h1></div>
+	<div class="stage s-active s-three-check animate__animated animate__slideInLeft"><h1>Библиотеки</h1></div>
+</header>
+<div class="container Libraries">
+
+	  <a onclick="check(0)" target="_blank" href="https://nodejs.org/en/download/" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Node.js</h2> </div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-0">
+    <label for="work-0"></label>
+  </a>
+
+
+	  <a onclick="check(1)" target="_blank" href="https://www.java.com/ru/download/" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Java</h2> </div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-1">
+    <label for="work-1"></label>
+  </a>
+
+	  <a onclick="check(2)" target="_blank" href="https://git-scm.com/downloads" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Git</h2> </div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-2">
+    <label for="work-2"></label>
+  </a>
+
+	  <a onclick="check(3)" target="_blank" href="https://lesscss.org/" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Less</h2> </div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-3">
+    <label for="work-3"></label>
+  </a>
+
+</div>
+
+
+<a href="Final.html" class="button c-p">Финал</a>
+<script>
+  var checkboxs = document.querySelectorAll('#id-checkbox');
+  function check(i) {
+    checkboxs[i].setAttribute("checked","checked");
+  }
+  
+</script>
+</body> 
+</html>

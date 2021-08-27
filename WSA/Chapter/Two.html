@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Software</title>
+	<link rel="stylesheet" type="text/css" href="../../Fonts/Geometria/GeometriaFont.css">
+	<link rel="stylesheet" type="text/css" href="chapter.css">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header class="progressbar">
+	<div class="stage s-active s-one-check animate__animated animate__slideInLeft"><h1>Optimization</h1></div>
+	<div class="stage s-active s-two animate__animated animate__slideInLeft"><h1>Software</h1></div>
+	<div class="stage s-three animate__animated animate__slideInLeft animate__fast"><h1>Libraries</h1></div>
+</header>
+
+<div class="filters">
+
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group">
+      <button id="btn-refresh" class="button-filter" data-filter=".Work">Work</button>
+      <button id="btn-refresh" class="button-filter" data-filter=".Tools">Tools</button>
+      <button id="btn-refresh" class="button-filter" data-filter=".Internet">Internet</button>
+      <button id="btn-refresh" class="button-filter" data-filter=".Drivers">Drivers</button>
+    </div>
+  </div>
+
+</div>
+<div class="container">
+	
+
+
+<div class="grid">
+
+<!-- Work -->
+
+  <a onclick="check(0)" target="_blank" href="https://www.figma.com/downloads/" class="block-filters Work">
+    <nav class="info">
+      <div class="header"><h2>Figma</h2> </div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-one" type="checkbox" id="work-0">
+    <label for="work-0"></label>
+  </a>
+
+    <a onclick="check(1)" target="_blank" href="https://www.sublimetext.com/" class="block-filters Work">
+    <nav class="info">
+      <div class="header"><h2>Sublime text 4</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-one" type="checkbox" id="work-1">
+    <label for="work-1"></label>
+  </a>
+
+    <a onclick="check(2)" target="_blank" href="https://prepros.io/downloads" class="block-filters Work">
+    <nav class="info">
+      <div class="header"><h2>Prepros</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-one" type="checkbox" id="work-2">
+    <label for="work-2"></label>
+  </a>
+
+    <a onclick="check(3)" target="_blank" href="https://github.com/microsoft/terminal" class="block-filters Work">
+    <nav class="info">
+      <div class="header"><h2>Windows Terminal</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-one" type="checkbox" id="work-3">
+    <label for="work-3"></label>
+  </a>
+
+<!-- Tools -->
+
+    <a onclick="check(4)" target="_blank" href="https://transmissionbt.com/download/" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Transmission</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-4">
+    <label for="work-4"></label>
+  </a>
+
+    <a onclick="check(5)" target="_blank" href="https://snapdrop.net/" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Snapdrop</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-5">
+    <label for="work-5"></label>
+  </a>
+
+
+    <a onclick="check(6)" target="_blank" href="https://app.prntscr.com/en/index.html" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>LightShot</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-6">
+    <label for="work-6"></label>
+  </a>
+
+
+    <a onclick="check(7)" target="_blank" href="https://www.7-zip.org/" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>7-zip</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-7">
+    <label for="work-7"></label>
+  </a>
+
+
+    <a onclick="check(8)" target="_blank" href="https://drive.google.com/file/d/1dAvR1zw55dPAj7XMSKw_x_PSJ1fm6Jhc/view" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Office</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-8">
+    <label for="work-8"></label>
+  </a>
+
+
+    <a onclick="check(9)" target="_blank" href="https://www.henrypp.org/product/memreduct" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Mem reduct</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-9">
+    <label for="work-9"></label>
+  </a>
+
+
+    <a onclick="check(10)" target="_blank" href="https://picasa.ru.uptodown.com/windows" class="block-filters Tools">
+    <nav class="info">
+      <div class="header"><h2>Picasa 3</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-two" type="checkbox" id="work-10">
+    <label for="work-10"></label>
+  </a>
+
+<!-- Internet -->
+
+    <a onclick="check(11)" target="_blank" href="https://www.google.com/intl/ru/chrome/" class="block-filters Internet">
+    <nav class="info">
+      <div class="header"><h2>Chrome</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-three" type="checkbox" id="work-11">
+    <label for="work-11"></label>
+  </a>
+
+
+    <a onclick="check(12)" target="_blank" href="https://desktop.telegram.org/" class="block-filters Internet">
+    <nav class="info">
+      <div class="header"><h2>Telegram</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-three" type="checkbox" id="work-12">
+    <label for="work-12"></label>
+  </a>
+
+
+    <a onclick="check(13)" target="_blank" href="https://4pda.to/forum/index.php?showtopic=715234&view=findpost&p=106753496" class="block-filters Internet">
+    <nav class="info">
+      <div class="header"><h2>Spotify</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-three" type="checkbox" id="work-13">
+    <label for="work-13"></label>
+  </a>
+
+<!-- Drivers -->
+
+
+    <a onclick="check(14)" target="_blank" href="https://www.canon.ru/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_g_series/pixma_g3415.html?type=software&language=ru&os=windows%2010%20(64-bit)" class="block-filters Drivers">
+    <nav class="info">
+      <div class="header"><h2>Canon G3415</h2></div>
+    </nav>
+    <input id="id-checkbox" class="filter-checkbox fc-four" type="checkbox" id="work-14">
+    <label for="work-14"></label>
+  </a>
+
+</div>
+
+</div>
+
+
+<a href="Three.html" class="button c-p">Next</a>
+
+
+<script src="isotope.pkgd.js"></script>
+<script src="filter.js"></script>
+<script>
+	  window.onload = function () {
+    let refresh = document.getElementById("btn-refresh");
+    refresh.click();
+    var TimetoClose;
+    TimetoClose = window.setTimeout(refresh.click(), 1000); 
+    }
+</script>
+<script>
+  var checkboxs = document.querySelectorAll('#id-checkbox');
+  function check(i) {
+    checkboxs[i].setAttribute("checked","checked");
+  }
+  
+</script>
+</body>
+</html>

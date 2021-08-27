@@ -1,0 +1,179 @@
+// Base
+@bg:#151515;
+@White:#FFFFFF;
+@Gray:#F3F3F3;
+@PrimaryColor:#978EFF;
+@SecondryColor:#91FF8E;
+
+// Block
+@BlockBgStatic:#1D1D1D;
+@BlockBorderStatic:2px solid #464646;
+
+@PrimaryBlockBg:#37345A;
+@PrimaryBlockBorder:2px solid @PrimaryColor;
+
+@SecondryBlockBg:#365636;
+@SecondryBlockBorder:2px solid @SecondryColor;
+
+// Button
+@ButtonBgStatic:#1D1D1D;
+@ButtonBorderStatic:2px solid #464646;
+
+@ButtonBgHover:@PrimaryColor;
+@ButtonBorderHover:2px solid @PrimaryColor;
+
+
+
+
+
+
+* {
+	margin: 0;
+	padding:0;
+	font-family: 'Geometria',sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: @bg;
+    padding: 40px;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+	min-height: 88vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap:15px;
+}
+
+.bottom {
+	display: flex;
+	flex-direction: row;
+	gap:15px;
+}
+
+.block {
+	background:@BlockBgStatic;
+	border:@BlockBorderStatic;
+	border-radius:10px;
+	padding:20px;
+	display: flex;
+	flex-direction: column;
+	gap:15px;
+
+	p {
+		font-family: Geometria;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: 0.13em;
+		color: @Gray;
+	}
+}
+
+#top {
+	h1 {
+		font-family: Geometria;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 48px;
+		letter-spacing: 0.03em;
+		color: @PrimaryColor;
+
+	}
+}
+
+.chapters {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2 {
+		font-family: Geometria;
+		font-size: 24px;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		color: @White;
+	}
+
+	h1 {
+		font-family: Geometria;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		color: @SecondryColor;
+	}
+
+}
+
+.button {
+	background:@ButtonBgStatic;
+	border:@ButtonBorderStatic;
+	border-radius:10px;
+	padding:12px 40px 13px 40px;
+	font-family: Geometria;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	color: @PrimaryColor;
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		background:@ButtonBgHover;
+		border:@ButtonBorderHover;
+		color: @ButtonBgStatic;
+	}
+
+}
+
+
+
+.TopActive {
+	background: @PrimaryBlockBg;
+	border:@PrimaryBlockBorder;
+	transition: 0.3s;
+	p {
+		color: @White;
+	}
+}
+
+.BottomActive {
+	background: @SecondryBlockBg;
+	border:@SecondryBlockBorder;
+	transition: 0.3s;
+
+	p {
+		color: @White;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	body {
+		padding:15px;
+	}
+
+	.bottom {
+		flex-direction: column;
+	}
+}
+
+
