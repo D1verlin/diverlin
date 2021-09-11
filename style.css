@@ -74,6 +74,10 @@
     padding: 0;
 }
 
+*::selection {
+    background: var(--project-list-description-color);
+}
+
 body {
     background: var(--bg);
     padding: 30px;
@@ -167,14 +171,39 @@ header {
     cursor: not-allowed;
 }
 
+.lang-content a:before {
+    content: '';
+    left: -2px;
+    position: absolute;
+    background: var(--color-h2);
+    width: 2px;
+    height: 23px;
+    display: block;
+}
+
+.lang-content #active:before {
+    background: #6780ab;
+}
+
 .lang-content a {
     font-size: 20px;
-    line-height: 100%;
     letter-spacing: 0.03em;
     color: var(--color-h2);
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
 
 }
+
+.lang-content #default:hover {
+    color: #fff;
+}
+
+.lang-content #default:hover:before {
+    background: #fff;
+}
+
 
 
 .lang svg {
@@ -345,6 +374,11 @@ nav a svg {
   background: var(--project-list-description-color);
   transition: 0.3s;
 }
+
+#l_info::selection {
+    background: var(--bg);
+}
+
 
 
 #l_warning {
